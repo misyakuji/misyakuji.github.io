@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"/><meta name="theme-color" content="#222"/><meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1"/><meta name="renderer" content="webkit"/><link rel="icon" type="image/ico" sizes="32x32" href="/assets/favicon.ico"/><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"/><link rel="alternate" href="/rss.xml" title="夕の書架" type="application/rss+xml"><link rel="alternate" href="/atom.xml" title="夕の書架" type="application/atom+xml"><link rel="alternate" type="application/json" title="夕の書架" href="https://misyakuji.github.io/feed.json"/><link rel="preconnect" href="https://s4.zstatic.net"/><link rel="preconnect" href="https://at.alicdn.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CFredericka%20the%20Great:400,400italic,700,700italic%7CNoto%20Serif%20JP:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CInconsolata:400,400italic,700,700italic&display=swap&subset=latin,latin-ext" media="none" onload="this.media&#x3D;&#39;all&#39;"><link rel="stylesheet" href="/css/app.css?v=0.4.25"><link rel="modulepreload" href="/js/chunk-HJSTZ4VX.js"></link><link rel="modulepreload" href="/js/chunk-MUVQY26K.js"></link><link rel="modulepreload" href="/js/chunk-V65NCC2Q.js"></link><link rel="modulepreload" href="/js/copy-tex-AIBALYGI.js"></link><link rel="modulepreload" href="/js/index.esm-3GMG562S.js"></link><link rel="modulepreload" href="/js/post-MQQBC3JE.js"></link><link rel="modulepreload" href="/js/quicklink-62JCYG4B.js"></link><link rel="modulepreload" href="/js/siteInit.js"></link><link rel="preload" href="https://t.mwm.moe/pc" as="image" fetchpriority="high"><link rel="preload" href="https://cloud.qqshabi.cn/api/images/api.php" as="image" fetchpriority="high"><link rel="preload" href="https://www.dmoe.cc/random.php" as="image" fetchpriority="high"><link rel="preload" href="https://t.mwm.moe/fj" as="image" fetchpriority="high"><link rel="preload" href="https://t.mwm.moe/fj" as="image" fetchpriority="high"><link rel="preload" href="https://t.mwm.moe/pc" as="image" fetchpriority="high"><meta name="keywords" content="框架"/><meta name="description" content="程序员一枚~"/><link rel="canonical" href="https://misyakuji.github.io/2025/03/05/backend/SpringBoot/"><title>SpringBoot</title><meta name="generator" content="Hexo 7.3.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">SpringBoot</h1><div class="meta"><span class="item" title="创建时间：2025-03-05 00:00:00"><span class="icon"><i class="ic i-calendar"></i></span><span class="text">发表于</span><time itemprop="dateCreated datePublished" datetime="2025-03-05T00:00:00+08:00">2025-03-05</time></span><span class="item" title="本文字数"><span class="icon"><i class="ic i-pen"></i></span><span class="text">本文字数</span><span>2.6k</span><span class="text">字</span></span><span class="item" title="阅读时长"><span class="icon"><i class="ic i-clock"></i></span><span class="text">阅读时长</span><span>2 分钟</span></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span><span class="line"></span><span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Yuu Shoka</a></li></ul><ul class="right" id="rightNav"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div class="pjax" id="imgs"><ul><li class="item" style="background-image: url(&quot;https://t.mwm.moe/pc&quot;);"></li><li class="item" style="background-image: url(&quot;https://cloud.qqshabi.cn/api/images/api.php&quot;);"></li><li class="item" style="background-image: url(&quot;https://www.dmoe.cc/random.php&quot;);"></li><li class="item" style="background-image: url(&quot;https://t.mwm.moe/fj&quot;);"></li><li class="item" style="background-image: url(&quot;https://t.mwm.moe/fj&quot;);"></li><li class="item" style="background-image: url(&quot;https://t.mwm.moe/pc&quot;);"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"></use><use xlink:href="#gentle-wave" x="48" y="3"></use><use xlink:href="#gentle-wave" x="48" y="5"></use><use xlink:href="#gentle-wave" x="48" y="7"></use></g></svg></div><main><div class="inner"><div class="pjax" id="main"><div class="article wrap"><div class="breadcrumb" itemListElement itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i><span><a href="/">首页</a></span><i class="ic i-angle-right"></i><span class="current" itemprop="itemListElement" itemscope="itemscope" itemtype="https://schema.org/ListItem"><a href="/categories/%E5%90%8E%E7%AB%AF/" itemprop="item" rel="index" title="分类于后端"><span itemprop="name">后端<meta itemprop="position" content="0"/></span></a></span></div><article class="post block" itemscope="itemscope" itemtype="http://schema.org/Article" lang="zh-CN"><link itemprop="mainEntityOfPage" href="https://misyakuji.github.io/2025/03/05/backend/SpringBoot/"/><span hidden="hidden" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><meta itemprop="image" content="/assets/xi.jpg"/><meta itemprop="name" content="夕"/><meta itemprop="description" content="^_^, 程序员一枚~"/></span><span hidden="hidden" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization"><meta itemprop="name" content="夕の書架"/></span><div class="body md" itemprop="articleBody"><h1 id="springboot"><a class="anchor" href="#springboot">#</a> SpringBoot</h1>
+<p>Spring Boot 是一个用于简化 Spring 应用程序开发的框架，它提供了一种开箱即用的方式来创建和部署 Spring 应用程序。以下是 Spring Boot 的一些核心知识点：</p>
+<h2 id="1-什么是springboot"><a class="anchor" href="#1-什么是springboot">#</a> 1. 什么是 SpringBoot？</h2>
+<p>Spring Boot 是一个基于 Spring 框架的扩展，用于简化 Spring 应用程序的开发和部署。它通过自动配置、起步依赖和内嵌服务器等功能，减少了开发者的配置工作量，并使得应用程序能够以独立的 JAR 文件形式运行。</p>
+<h2 id="2-核心特性"><a class="anchor" href="#2-核心特性">#</a> 2. 核心特性</h2>
+<h3 id="21-自动配置"><a class="anchor" href="#21-自动配置">#</a> 2.1 自动配置</h3>
+<ul>
+<li><strong>自动化配置</strong>：Spring Boot 根据项目的依赖和配置自动完成 Spring 配置，减少了需要手动编写的配置代码。它通过  <code>@SpringBootApplication</code>  注解及其内部的  <code>@EnableAutoConfiguration</code>  注解实现自动配置。</li>
+</ul>
+<h3 id="22-起步依赖"><a class="anchor" href="#22-起步依赖">#</a> 2.2 起步依赖</h3>
+<ul>
+<li><strong>Starter POMs</strong>：提供了一些预定义的依赖组合，以便快速启动项目。例如：
+<ul>
+<li><code>spring-boot-starter-web</code> ：用于构建 Web 应用程序。</li>
+<li><code>spring-boot-starter-data-jpa</code> ：用于与 JPA 数据库进行集成。</li>
+<li><code>spring-boot-starter-test</code> ：用于测试支持。</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-内嵌服务器"><a class="anchor" href="#23-内嵌服务器">#</a> 2.3 内嵌服务器</h3>
+<ul>
+<li><strong>内嵌服务器支持</strong>：Spring Boot 支持内嵌 Tomcat、Jetty 和 Undertow 服务器。这使得应用程序可以打包为一个可执行的 JAR 文件，并在没有外部服务器的情况下运行。</li>
+</ul>
+<h3 id="24-actuator"><a class="anchor" href="#24-actuator">#</a> 2.4 Actuator</h3>
+<ul>
+<li><strong>应用监控</strong>：提供了用于监控和管理 Spring Boot 应用程序的端点。这些端点包括：
+<ul>
+<li><code>/actuator/health</code> ：用于检查应用程序的健康状态。</li>
+<li><code>/actuator/info</code> ：提供应用程序的元数据和配置信息。</li>
+<li><code>/actuator/env</code> ：显示应用程序的环境属性。</li>
+</ul>
+</li>
+</ul>
+<h3 id="25-配置文件"><a class="anchor" href="#25-配置文件">#</a> 2.5 配置文件</h3>
+<ul>
+<li><strong>application.properties / application.yml</strong>：Spring Boot 使用  <code>application.properties</code>  或  <code>application.yml</code>  文件来管理应用程序的配置。这些文件支持不同的配置环境，如开发、测试和生产环境。</li>
+</ul>
+<h3 id="26-运行和部署"><a class="anchor" href="#26-运行和部署">#</a> 2.6 运行和部署</h3>
+<ul>
+<li><strong>运行</strong>：通过执行  <code>java -jar &lt;your-application&gt;.jar</code>  命令可以运行 Spring Boot 应用程序。</li>
+<li><strong>部署</strong>：Spring Boot 应用程序可以作为独立的 JAR 文件或 WAR 文件进行部署，简化了部署流程。</li>
+</ul>
+<h2 id="3-spring-boot-注解"><a class="anchor" href="#3-spring-boot-注解">#</a> 3. Spring Boot 注解</h2>
+<h3 id="31-springbootapplication"><a class="anchor" href="#31-springbootapplication">#</a> 3.1 @SpringBootApplication</h3>
+<ul>
+<li><strong>作用</strong>：这是 Spring Boot 应用程序的核心注解，包含了  <code>@Configuration</code> 、 <code>@EnableAutoConfiguration</code>  和  <code>@ComponentScan</code>  注解，标识一个 Spring Boot 应用程序的入口点。</li>
+</ul>
+<h3 id="32-restcontroller-和-requestmapping"><a class="anchor" href="#32-restcontroller-和-requestmapping">#</a> 3.2 @RestController 和 @RequestMapping</h3>
+<ul>
+<li><strong>@RestController</strong>：用于创建 RESTful Web 服务的控制器，结合  <code>@ResponseBody</code>  注解自动将返回的对象转换为 JSON。</li>
+<li><strong>@RequestMapping</strong>：用于定义请求的映射路径和方法（GET、POST 等）。</li>
+</ul>
+<h3 id="33-component-service-repository"><a class="anchor" href="#33-component-service-repository">#</a> 3.3 @Component, @Service, @Repository</h3>
+<ul>
+<li><strong>@Component</strong>：用于标识一个普通的 Spring 组件，作为 Spring 容器中的一个 Bean。</li>
+<li><strong>@Service</strong>：用于标识业务逻辑组件，自动被 Spring 扫描和注册。</li>
+<li><strong>@Repository</strong>：用于标识数据访问组件，自动被 Spring 扫描和注册，并且会对数据库访问异常进行数据访问异常转换。</li>
+</ul>
+<h2 id="4-配置和属性"><a class="anchor" href="#4-配置和属性">#</a> 4. 配置和属性</h2>
+<h3 id="41-配置文件位置"><a class="anchor" href="#41-配置文件位置">#</a> 4.1 配置文件位置</h3>
+<ul>
+<li><strong>默认位置</strong>： <code>src/main/resources/application.properties</code>  或  <code>src/main/resources/application.yml</code> 。</li>
+<li><strong>环境特定配置</strong>：可以在  <code>application-&#123;profile&#125;.properties</code>  或  <code>application-&#123;profile&#125;.yml</code>  中定义不同环境的配置，例如  <code>application-dev.properties</code>  和  <code>application-prod.properties</code> 。</li>
+</ul>
+<h3 id="42-配置属性"><a class="anchor" href="#42-配置属性">#</a> 4.2 配置属性</h3>
+<ul>
+<li><strong>自定义配置</strong>：可以通过  <code>@Value</code>  注解或  <code>@ConfigurationProperties</code>  注解注入配置属性。</li>
+<li><strong>示例</strong>：
+<ul>
+<li><code>@Value(&quot;$&#123;server.port&#125;&quot;)</code> ：注入属性值。</li>
+<li><code>@ConfigurationProperties(prefix = &quot;myapp&quot;)</code> ：将属性绑定到 Java 对象上。</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-spring-boot-的启动类"><a class="anchor" href="#5-spring-boot-的启动类">#</a> 5. Spring Boot 的启动类</h2>
+<ul>
+<li><strong>主启动类</strong>：通常包含  <code>main</code>  方法，用于启动 Spring Boot 应用程序。主启动类通常使用  <code>@SpringBootApplication</code>  注解标识，并调用  <code>SpringApplication.run()</code>  方法启动应用程序。</li>
+</ul>
+<h2 id="6-总结"><a class="anchor" href="#6-总结">#</a> 6. 总结</h2>
+<p>Spring Boot 通过自动配置、起步依赖、内嵌服务器和 Actuator 等功能简化了 Spring 应用程序的开发和部署过程。它提供了一种开箱即用的方式来构建和管理 Spring 应用程序，使得开发者能够更专注于业务逻辑的实现。</p>
+<div class="tags"><a href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag"><i class="ic i-tag"></i>框架</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i></span><span class="text">更新于 </span><time title="修改时间：2025-12-22 00:14:19" itemprop="dateModified" datetime="2025-12-22T00:14:19+08:00">2025-12-22</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i>赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img loading="lazy" data-src="/assets/wechatpay.png" alt="夕 微信支付"/><p>微信支付</p></div><div><img loading="lazy" data-src="/assets/alipay.png" alt="夕 支付宝"/><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者：</strong>夕<i class="ic i-at"><em>@</em></i>夕の書架</li><li class="link"><strong>本文链接：</strong><a href="https://misyakuji.github.io/2025/03/05/backend/SpringBoot/" title="SpringBoot">https://misyakuji.github.io/2025/03/05/backend/SpringBoot/</a></li><li class="license"><strong>版权声明：</strong>本站所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2024/08/03/backend/Mybatis/" rel="prev" itemprop="url" data-background-image="https:&#x2F;&#x2F;v2.xxapi.cn&#x2F;api&#x2F;randomAcgPic?type&#x3D;pc&amp;return&#x3D;302" title="Mybatis"><span class="type">上一篇</span><span class="category"><i class="ic i-flag"></i>后端</span><h3>Mybatis</h3></a></div><div class="item right"><a href="/2025/12/22/linux/distro/" rel="next" itemprop="url" data-background-image="https:&#x2F;&#x2F;api.suyanw.cn&#x2F;api&#x2F;comic&#x2F;api.php" title="Linux主流发行版"><span class="type">下一篇</span><span class="category"><i class="ic i-flag"></i>Linux</span><h3>Linux主流发行版</h3></a></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#springboot"><span class="toc-number">1.</span> <span class="toc-text"> SpringBoot</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E4%BB%80%E4%B9%88%E6%98%AFspringboot"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 什么是 SpringBoot？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%A0%B8%E5%BF%83%E7%89%B9%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 核心特性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#21-%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 2.1 自动配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#22-%E8%B5%B7%E6%AD%A5%E4%BE%9D%E8%B5%96"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 2.2 起步依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#23-%E5%86%85%E5%B5%8C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 2.3 内嵌服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#24-actuator"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 2.4 Actuator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#25-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.5.</span> <span class="toc-text"> 2.5 配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#26-%E8%BF%90%E8%A1%8C%E5%92%8C%E9%83%A8%E7%BD%B2"><span class="toc-number">1.2.6.</span> <span class="toc-text"> 2.6 运行和部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-spring-boot-%E6%B3%A8%E8%A7%A3"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. Spring Boot 注解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#31-springbootapplication"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 3.1 @SpringBootApplication</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#32-restcontroller-%E5%92%8C-requestmapping"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 3.2 @RestController 和 @RequestMapping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#33-component-service-repository"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 3.3 @Component, @Service, @Repository</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE%E5%92%8C%E5%B1%9E%E6%80%A7"><span class="toc-number">1.4.</span> <span class="toc-text"> 4. 配置和属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#41-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 4.1 配置文件位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#42-%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 4.2 配置属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-spring-boot-%E7%9A%84%E5%90%AF%E5%8A%A8%E7%B1%BB"><span class="toc-number">1.5.</span> <span class="toc-text"> 5. Spring Boot 的启动类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%80%BB%E7%BB%93"><span class="toc-number">1.6.</span> <span class="toc-text"> 6. 总结</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"><ul><li ><a href="/2024/08/03/backend/Mybatis/" rel="bookmark" title="Mybatis">Mybatis</a></li><li  class="active"><a href="/2025/03/05/backend/SpringBoot/" rel="bookmark" title="SpringBoot">SpringBoot</a></li><li ><a href="/2025/12/22/backend/Spring/" rel="bookmark" title="Spring">Spring</a></li><li ><a href="/2025/12/22/backend/SpringCloud/" rel="bookmark" title="SpringCloud">SpringCloud</a></li></ul></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person"><img class="image" loading="lazy" decoding="async" itemprop="image" alt="夕" src="/assets/xi.jpg"/><p class="name" itemprop="name">夕</p><div class="description" itemprop="description">程序员一枚~</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">14</span><span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">5</span><span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">3</span><span class="name">标签</span></a></div></nav><div class="social"><a target="_blank" rel="noopener" href="https://github.com/misyakuji" class="item github" title="https:&#x2F;&#x2F;github.com&#x2F;misyakuji"><i class="ic i-github"></i></a><a target="_blank" rel="noopener" href="https://gitee.com/misyakuji" class="item gitee" title="https:&#x2F;&#x2F;gitee.com&#x2F;misyakuji"><i class="ic i-gitee"></i></a><a target="_blank" rel="noopener" href="https://qm.qq.com/q/U6cfgDuLWS" class="item qq" title="https:&#x2F;&#x2F;qm.qq.com&#x2F;q&#x2F;U6cfgDuLWS"><i class="ic i-qq"></i></a><a target="_blank" rel="noopener" href="https://space.bilibili.com/86496941" class="item BiliBili" title="https:&#x2F;&#x2F;space.bilibili.com&#x2F;86496941"><i class="ic i-bilibili"></i></a></div><div class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li><li class="item dropdown"><a href="#" onclick="return false;"><i class="ic i-magic"></i>链环</a><ul class="submenu"><li class="item"><a href="/friends/" rel="section"><i class="ic i-heart"></i>友链</a></li><li class="item"><a href="/webstack/" rel="section"><i class="ic i-star"></i>网址</a></li></ul></li></div></div></div></div><ul id="quick"><li class="prev pjax"><a href="/2025/12/22/linux/distro/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"><a href="/2024/08/03/backend/Mybatis/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"></div><div class="status"><div class="copyright">&copy; 2022 -<span itemprop="copyrightYear">2025</span><span class="with-love"><i class="ic i-sakura rotate"></i></span><span class="author" itemprop="copyrightHolder">夕 @ Yuu Shoka</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i></span><span title="站点总字数">41k 字</span><span class="post-meta-divider"> | </span><span class="post-meta-item-icon"><i class="ic i-coffee"></i></span><span title="站点阅读时长">37 分钟</span></div><div class="powered-by">基于 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & Theme.<a target="_blank" rel="noopener" href="https://github.com/theme-shoka-x/hexo-theme-shokaX/">ShokaX</a></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL = {
+    ispost: true,
+    path: `2025/03/05/backend/SpringBoot/`,
+    favicon: {
+        show: `（●´3｀●）やれやれだぜ`,
+        hide: `(´Д｀)大変だ！`
+    },
+    search: {
+        placeholder: "文章搜索",
+        empty: "关于 「 ${query} 」，什么也没搜到",
+        stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    nocopy: "false",
+    copyright: `复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。`,
+    copy_tex: false,
+    katex: false,
+    mermaid: false,
+    audio: undefined,
+    fancybox: true,
+    nocopy: false,
+    outime: true,
+    template: `<div class="note warning"><p><span class="label warning">文章时效性提示</span><br>这是一篇发布于 {{publish}} 天前，最后一次更新在 {{updated}} 天前的文章，部分信息可能已经发生改变，请注意甄别。</p></div>`,
+    quiz: {
+        choice: `单选题`,
+        multiple: `多选题`,
+        true_false: `判断题`,
+        essay: `问答题`,
+        gap_fill: `填空题`,
+        mistake: `错题备注`
+    },
+    ignores: [
+        (uri) => uri.includes('#'),
+        (uri) => new RegExp(LOCAL.path + '$').test(uri),
+            []
+    ]
+};
+</script><script src="https://s4.zstatic.net/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO&#x2F;+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn&#x2F;6Z&#x2F;hRTt8+pR6L4N2" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha384-Zm+UU4tdcfAm29vg+MTbfu&#x2F;&#x2F;q5B&#x2F;lInMbMCr4T8c9rQFyOv6PlfQYpB5wItcXWe7" crossorigin="anonymous" fetchpriority="high"></script><script src="https://s4.zstatic.net/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js" integrity="sha384-TOxsBplaL96&#x2F;QDWPIUg+ye3v89qSE3s22XNtJMmCeZEep3cVDmXy1zEfZvVv+y2m" crossorigin="anonymous" fetchpriority="high"></script><script src="/js/siteInit.js?v=0.4.25" type="module" fetchpriority="high" defer></script></body></html>
